@@ -1,0 +1,28 @@
+<h1>TODO-List</h1>
+
+<table>
+    <% list.forEach(function(works){ %>
+        <tr>
+            <th scope="row"><a href="#"> <%= works.name %> </a> </th>
+        </tr> 
+        <!-- <li ><a href="#"> <%= works.name %> </a></li> -->
+        
+        
+    <% }); %>
+</table>
+
+    
+
+
+
+
+<form action="/add" method="POST">
+    <input type="text" name="newWork" placeholder="new work">
+    <button>add</button>
+</form>
+<form action="/edit" method="POST">
+    <button>Edit the selected item</button>
+</form>
+<form action="/delete" method="POST">
+    <button>Delete the selected item</button>
+</form>
